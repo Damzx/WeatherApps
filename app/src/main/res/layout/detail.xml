@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--
+Muhammad Adam Ibrahim
+215150700111034
+-->
+
+
+    <ImageView
+        android:id="@+id/imgCuaca"
+        android:layout_width="198dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTglNow"
+        tools:srcCompat="@drawable/cerah" />
+
+    <TextView
+        android:id="@+id/tvCuaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="36dp"
+        android:text="Cuaca"
+        app:layout_constraintEnd_toStartOf="@+id/tvKeterangan"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCuaca" />
+
+    <TextView
+        android:id="@+id/tvKeterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="116dp"
+        android:text="Keterangan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCuaca"
+        app:layout_constraintTop_toBottomOf="@+id/imgCuaca" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Longitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCuaca" />
+
+    <TextView
+        android:id="@+id/tvWindSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Kecepatan Angin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLongitude" />
+
+    <TextView
+        android:id="@+id/tvTglNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Tgl Hari Ini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/ramalan1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/ramalan2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal1"
+        app:srcCompat="@drawable/cerah" />
+
+    <ImageView
+        android:id="@+id/ramalan2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/ramalan3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ramalan1"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal2"
+        app:srcCompat="@drawable/cerah" />
+
+    <ImageView
+        android:id="@+id/ramalan3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ramalan2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal3"
+        app:srcCompat="@drawable/cerah" />
+
+    <TextView
+        android:id="@+id/tvTanggal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="tgl
+"
+        app:layout_constraintEnd_toStartOf="@+id/tvTanggal2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWindSpeed" />
+
+    <TextView
+        android:id="@+id/tvTanggal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="120dp"
+        android:text="tgl
+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTanggal2"
+        app:layout_constraintTop_toBottomOf="@+id/tvWindSpeed" />
+
+    <TextView
+        android:id="@+id/tvTanggal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="120dp"
+        android:text="tgl
+"
+        app:layout_constraintEnd_toStartOf="@+id/tvTanggal3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTanggal1"
+        app:layout_constraintTop_toBottomOf="@+id/tvWindSpeed" />
+
+    <TextView
+        android:id="@+id/tvKeterangan1"
+        android:layout_width="82dp"
+        android:layout_height="22dp"
+        android:text="ket"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/tvKeterangan2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ramalan1" />
+
+    <TextView
+        android:id="@+id/tvKeterangan2"
+        android:layout_width="79dp"
+        android:layout_height="21dp"
+        android:text="ket"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/tvKeterangan3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvKeterangan1"
+        app:layout_constraintTop_toBottomOf="@+id/ramalan2" />
+
+    <TextView
+        android:id="@+id/tvKeterangan3"
+        android:layout_width="80dp"
+        android:layout_height="23dp"
+        android:text="ket"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvKeterangan2"
+        app:layout_constraintTop_toBottomOf="@+id/ramalan3" />
+
+    <TextView
+        android:id="@+id/tvTanggal5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="tgl
+"
+        app:layout_constraintEnd_toStartOf="@+id/tvTanggal6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTanggal4"
+        app:layout_constraintTop_toBottomOf="@+id/tvKeterangan2" />
+
+    <TextView
+        android:id="@+id/tvTanggal6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="tgl
+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTanggal5"
+        app:layout_constraintTop_toBottomOf="@+id/tvKeterangan3" />
+
+    <ImageView
+        android:id="@+id/ramalan4"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/ramalan5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal4"
+        app:srcCompat="@drawable/cerah" />
+
+    <TextView
+        android:id="@+id/tvTanggal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="tgl
+"
+        app:layout_constraintEnd_toStartOf="@+id/tvTanggal5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKeterangan1" />
+
+    <TextView
+        android:id="@+id/tvKeterangan4"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:text="ket"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/tvKeterangan5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ramalan4" />
+
+    <ImageView
+        android:id="@+id/ramalan5"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/ramalan6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ramalan4"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal5"
+        app:srcCompat="@drawable/cerah" />
+
+    <ImageView
+        android:id="@+id/ramalan6"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ramalan5"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggal6"
+        app:srcCompat="@drawable/cerah" />
+
+    <TextView
+        android:id="@+id/tvKeterangan5"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:text="ket"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/tvKeterangan6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvKeterangan4"
+        app:layout_constraintTop_toBottomOf="@+id/ramalan5" />
+
+    <TextView
+        android:id="@+id/tvKeterangan6"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:text="ket"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvKeterangan5"
+        app:layout_constraintTop_toBottomOf="@+id/ramalan6" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Latitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toEndOf="@+id/tvLongitude"
+        app:layout_constraintTop_toBottomOf="@+id/tvKeterangan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
